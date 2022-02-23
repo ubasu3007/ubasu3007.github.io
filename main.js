@@ -20,7 +20,7 @@ document.body.appendChild( renderer.domElement );
 
 //haumea
 
-const haumeaTexture = new THREE.TextureLoader().load('assets/haumea.jpg')
+const haumeaTexture = new THREE.TextureLoader().load('dist/assets/haumea.jpg')
 const haumea = new THREE.Mesh(
     new THREE.SphereGeometry(5, 31, 31),
     new THREE.MeshStandardMaterial({ map: haumeaTexture })
@@ -28,7 +28,7 @@ const haumea = new THREE.Mesh(
 
 //makemake
 
-const makemakeTexture = new THREE.TextureLoader().load('assets/makemake.jpg')
+const makemakeTexture = new THREE.TextureLoader().load('dist/assets/makemake.jpg')
 const makemake = new THREE.Mesh(
     new THREE.SphereGeometry(5, 31, 31),
     new THREE.MeshStandardMaterial({ map: makemakeTexture })
@@ -36,7 +36,7 @@ const makemake = new THREE.Mesh(
 
 //exo1
 
-const exo1Texture = new THREE.TextureLoader().load('assets/exo1.jpg')
+const exo1Texture = new THREE.TextureLoader().load('dist/assets/exo1.jpg')
 const exo1 = new THREE.Mesh(
     new THREE.SphereGeometry(5, 31, 31),
     new THREE.MeshStandardMaterial({ map: exo1Texture })
@@ -63,7 +63,7 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('assets/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('dist/assets/space.jpg');
 scene.background = spaceTexture;
 
 const pointLight = new THREE.PointLight(0xffffff);
